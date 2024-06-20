@@ -1,0 +1,145 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input[type="text"], 
+form input[type="password"], 
+form input[type="date"], 
+form textarea, 
+form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+}
+
+form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Links */
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Task List Styles */
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.task-item h3 {
+    margin: 0;
+    color: #007bff;
+}
+
+.task-item p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.task-item .task-actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.task-item .task-actions a {
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.task-item .task-actions a.edit {
+    background-color: #ffc107;
+    color: white;
+}
+
+.task-item .task-actions a.delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+.task-item .task-actions a.edit:hover {
+    background-color: #e0a800;
+}
+
+.task-item .task-actions a.delete:hover {
+    background-color: #c82333;
+}
+
+/* Logout and Add Task Links */
+.header-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.header-links a {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.header-links a:hover {
+    background-color: #0056b3;
+}
